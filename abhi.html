@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Google Sans', 'Noto Sans Myanmar UI', arial, sans-serif;
+        }
+
+        .main {
+            border: 1px solid black;
+            display: inline-block;
+            margin-top: 155px;
+            padding: 50px;
+            border-radius: 10px;
+            border-color: rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            display: flex;
+            font-size: 22px;
+            justify-content: center;
+        }
+
+        .g {
+            color: blue;
+
+        }
+
+        .o {
+            color: red;
+        }
+
+        .y {
+            color: yellow;
+        }
+
+        .l {
+            color: green;
+        }
+
+        h5 {
+            font-size: 25px;
+            margin: 10px;
+        }
+
+        #email1 {
+            padding: 13px 15px;
+            height: 34px;
+            width: 365px;
+            margin-top: 25px;
+            font-weight: 700;
+            border-radius: 10px;
+        }
+        .input1 {
+            position: relative;
+        }
+
+        .input1 .lab {
+            position: absolute;
+            left: 18px;
+            top: 48px;
+        }
+
+      .input1  input{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="main">
+            <h1>
+                <div class="g">G</div>
+                <div class="O">o</div>
+                <div class="y">o</div>
+                <div class="g">g</div>
+                <div class="l">l</div>
+                <div class="o">e</div>
+            </h1>
+            <h5>Sign in to Chrome</h5>
+            <p>Use your Google Account</p>
+            <div class="input1">
+                <input type="email" id="email1" required onclick="myFunction(myf)">
+                <div class="lab" id="lab">Email or Phone</div>
+            </div>
+        </div>
+    </center>
+    <script>
+        function myFunction(myf) {
+            document.getElementById("lab").style.left="580px";
+            document.getElementById("lab").style.fontSize="10px";
+            document.getElementById("lab").style.top="360px";
+            document.getElementById("lab").style.position="fixed";
+            document.getElementById("lab").style.color="blue";
+            document.getElementById("lab").style.background="white";
+            
+        }
+        function myf(){
+            document.getElementById("email1").style.borderColor="blue";
+        }
+        
+        </script>
+</body>
+
+</html>
